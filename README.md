@@ -91,13 +91,15 @@ A standalone **Windows Desktop File Explorer & Deep Storage Intelligence Platfor
 
 ## 📦 Production Release Artifacts
 
-The production Windows x64 release binaries are located in the `release/` directory:
+Windows x64 installers and portable binaries are published on the
+[GitHub Releases page](https://github.com/Jack026/Windows-File-Explorer/releases).
+Release reports and verification documents remain in the `release/` directory:
 
 | Artifact | Location | Description |
 | :--- | :--- | :--- |
-| **Windows Setup Installer** | `release\Windows-File-Explorer-Setup.exe` | Complete NSIS Setup installer with desktop and start menu shortcuts |
-| **Standalone Portable Executable** | `release\Windows-File-Explorer.exe` | Single standalone portable executable (runs with no installation) |
-| **Unpacked Directory** | `release\Windows-File-Explorer-win-x64\` | Unpacked portable application directory |
+| **Windows Setup Installer** | GitHub Release asset | Complete NSIS setup installer with desktop and start menu shortcuts |
+| **Standalone Portable Executable** | GitHub Release asset | Portable executable that runs without installation |
+| **Unpacked Directory** | CI build output | Unpacked x64 application directory used for validation |
 
 ---
 
@@ -133,7 +135,7 @@ npx tsx scripts/test_phase6_performance_security.ts
 npm run build:all
 
 # Package Windows NSIS installer and portable executable:
-npx electron-builder --win
+npm run build:release
 ```
 
 ---

@@ -10,6 +10,7 @@
     "build:server": "esbuild server/index.ts --bundle --platform=node --target=node20 --outfile=dist-server/index.cjs --external:electron",
     "build": "vite build",
     "build:all": "npm run build && npm run build:server",
+    "build:release": "npm run build:all && electron-builder --win",
     "build:exe": "npm run build:all && electron-builder --dir",
     "start": "npm run desktop"
   },
