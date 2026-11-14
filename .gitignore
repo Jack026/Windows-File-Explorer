@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-electron/
+dist-server/
+.cache/
+
+# Packaged application binaries and generated release bundles
+release/*.exe
+release/Windows-File-Explorer-win-x64/
