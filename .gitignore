@@ -7,3 +7,4 @@ dist-server/
 # Packaged application binaries and generated release bundles
 release/*.exe
 release/Windows-File-Explorer-win-x64/
+build/*.pfx

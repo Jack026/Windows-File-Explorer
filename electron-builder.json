@@ -26,7 +26,12 @@
         "arch": ["x64"]
       }
     ],
-    "icon": "electron/icon.ico"
+    "icon": "electron/icon.ico",
+    "signtoolOptions": {
+      "certificateFile": "build/certificate.pfx",
+      "certificatePassword": "SmartExplorer2026!",
+      "publisherName": "Jack026"
+    }
   },
   "nsis": {
     "oneClick": false,
